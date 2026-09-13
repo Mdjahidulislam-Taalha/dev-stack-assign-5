@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+/* Logo */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brand img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+/* Navigation Links */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #ec4899;
+}
+
+/* Buttons */
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sign-in {
+  color: #374151;
+}
+
+.sign-up {
+  padding: 10px 18px;
+  border-radius: 999px !important;
+
+  color: white !important;
+
+  background: linear-gradient(
+    135deg,
+    #ff7a00,
+    #ec4899,
+    #8b5cf6
+  ) !important;
+}
+
+/* Mobile Menu */
+
+.menu-button {
+  display: none;
+
+  border: none;
+  background: none;
+
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .navbar-container {
+    height: 60px;
+    padding: 0 16px;
+  }
+}
+
+
+
+
+.hero {
+  max-width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 40px;
+}
+
+.hero-content {
+  width: 52%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.05;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, #ff7a00, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 500px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-buttons button {
+  padding: 11px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.explore-btn {
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #ff7a00, #ec4899, #8b5cf6);
+}
+
+.learn-btn {
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #334155;
+}
+
+.hero-image {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 430px;
+}
+
+
+
+
+.technology-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.technology-header {
+  margin-bottom: 30px;
+}
+
+.technology-header h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.technology-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.technology-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 24px;
+  align-items: start;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.technology-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  background: #ffffff;
+  min-height: 245px;
+  display: flex;
+  flex-direction: column;
+}
+
+.technology-card > img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.technology-card > span {
+  align-self: flex-end;
+  margin-top: -38px;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #fdf2f8;
+  color: #ec4899;
+  font-size: 9px;
+}
+
+.technology-card h3 {
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.technology-card p {
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.technology-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 12px;
+  font-size: 9px;
+  color: #64748b;
+}
+
+.technology-card > div span {
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #f8fafc;
+}
+
+.technology-card button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  background: #111827;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.your-stack {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px;
+  min-height: 245px;
+  background: #ffffff;
+}
+
+.your-stack h3 {
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.your-stack p {
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .technology-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .technology-section {
+    padding: 40px 16px;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.stack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.stack-header h3 {
+  margin-bottom: 4px;
+}
+
+.stack-header p {
+  margin: 0;
+}
+
+.stack-header button {
+  border: none;
+  background: white;
+  color: #ef4444;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.stack-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stack-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.stack-item img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.stack-item div {
+  flex: 1;
+}
+
+.stack-item h4 {
+  margin: 0;
+  font-size: 11px;
+  color: #111827;
+}
+
+.stack-item p {
+  margin: 2px 0 0;
+  font-size: 9px;
+  color: #64748b;
+}
+
+.stack-item button {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.technology-card button:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
