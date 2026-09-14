@@ -79,7 +79,7 @@ function TechnologySection() {
                         <div>
                             <h3>Your Stack</h3>
                             <p>
-                                {selectedTechnologies.length} Technology
+                                {selectedTechnologies.length} Technologies
                                 {selectedTechnologies.length !== 1 ? "s" : ""} Selected
                             </p>
                         </div>
